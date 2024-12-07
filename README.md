@@ -59,6 +59,9 @@ Why stop at the basics?
 
 ---
 
+![Game Demo](imgs/game_demo.gif)
+
+
 ## Getting Started
 
 **Ready to embark on this adventure?** Follow these steps:
