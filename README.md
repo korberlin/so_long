@@ -4,8 +4,6 @@
 
 Welcome, adventurers and code enthusiasts! I’m excited to share with you my journey through the **so_long** project at 42 Berlin. This challenge ventures beyond simple coding and delves into the realms of 2D graphics, event handling, and game mechanics—all to create a delightful, interactive experience on the screen.
 
-![so_long Passed with Bonus](imgs/so_longm.png)
-
 ---
 
 ## About
@@ -91,6 +89,8 @@ As you step into the world of **so_long**, enjoy the interplay of logic, artistr
 ## Contributing
 
 Have ideas for improvements or new features? Contributions are always welcome! Feel free to open issues, suggest enhancements, or submit pull requests. Let’s evolve **so_long** together, making it an even more captivating and polished experience.
+
+![so_long Passed with Bonus](imgs/so_longm.png)
 
 ---
 
