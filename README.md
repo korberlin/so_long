@@ -92,4 +92,3 @@ Have ideas for improvements or new features? Contributions are always welcome! F
 ---
 
 **Thank you for exploring my so_long project!** May your journey be filled with discovery, fun, and continuous learning. Enjoy the game and have a blast! 🚀
-```
