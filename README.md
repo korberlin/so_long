@@ -1,4 +1,3 @@
-```markdown
 # so_long
 
 ![so_long Cover](imgs/cover-so_long-bonus.png)
