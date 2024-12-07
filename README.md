@@ -3,82 +3,94 @@
 
 ![so_long Cover](imgs/cover-so_long-bonus.png)
 
-Welcome to my **so_long** project! 🌍🦈 This is a basic 2D game developed using **MiniLibX**, where you guide a character through a map, collect all the items, and find the exit.  
+Welcome, adventurers and code enthusiasts! I’m excited to share with you my journey through the **so_long** project at 42 Berlin. This challenge ventures beyond simple coding and delves into the realms of 2D graphics, event handling, and game mechanics—all to create a delightful, interactive experience on the screen.
+
 ![so_long Passed with Bonus](imgs/so_longm.png)
 
 ---
 
 ## About
-**so_long** is a project from 42 Berlin designed to enhance your skills in:
-- Window management & event handling with the **MiniLibX**.
-- File parsing and validating map configurations.
-- Pathfinding logic, using a **flood fill algorithm** to ensure the map is playable.
-- Working with basic 2D graphics, sprite animation, and score displays.
 
-Through this project, I learned:
-- How to integrate and manage graphical elements in a C project.
-- Techniques for validating maps (checking their shape, ensuring they are fully walled in, and that characters are correctly placed).
-- Handling user input (W, A, S, D) for character movement.
-- Implementing sprite animations for a richer visual experience.
-- Displaying the current score directly on the screen for a more engaging gameplay experience.
+**so_long** is not just another exercise; it’s an immersive exploration into graphical programming with the **MiniLibX** library. By implementing a 2D game from scratch, I’ve sharpened my skills in:
 
-This project has been tested on Linux machines.
+- **Window Management & Event Handling:** Opening a window, capturing user inputs, and ensuring seamless interaction.
+- **File Parsing & Map Validation:** Reading custom `.ber` map files, checking for correctness, ensuring walls surround the entire map, and verifying proper player, exit, and collectible placements.
+- **Pathfinding & Algorithmic Thinking:** Using a **flood fill algorithm** to confirm that the player can reach all collectibles and the exit.
+- **Enhanced Gameplay Mechanics (Bonus):** Infusing life into the game with sprite animations and directly displaying the score/move count on the screen.
+
+Throughout this project, I’ve embraced the complexity of integrating logic, graphics, and user experience—all developed and tested on **Linux** machines.
 
 ---
 
-## Features
-- **Map Components:**
-  - **0:** Empty space
-  - **1:** Wall
-  - **C:** Collectible
-  - **E:** Exit
-  - **P:** Player start position
-  
-- **Gameplay:**
-  - Collect all **C** items.
-  - Reach the **E** (exit) after collecting all items.
-  - Move using **W, A, S, D**.
-  - Walls (1) are impassable, ensuring you must navigate valid paths.
-  
-- **Path Validation:**
-  - The map must be rectangular and surrounded by walls.
-  - The flood fill algorithm ensures there is a valid path that allows collecting all collectibles and reaching the exit.
-  
-- **Bonus Highlights:**
-  - **Sprite Animation:** Characters and possibly other elements come to life through simple animations.
-  - **Score Display:** Your score or movement count appears directly on the screen, enhancing the gameplay experience.
+## Project Highlights
 
-- **Controls:**
-  - **W, A, S, D:** Move Up, Left, Down, Right.
-  - **ESC or Window Close:** Quit the game.
+- **Program Name:** `so_long`
+- **Files Submitted:** Makefile, *.h, *.c, maps, textures
+- **Makefile Rules:** NAME, all, clean, fclean, re
+- **Input:** A `.ber` map file
+- **Authorized Functions:** open, close, read, write, malloc, free, perror, strerror, exit, math library functions, MiniLibX functions, ft_printf (or custom equivalent), and Libft functions.
 
 ---
 
-## How to Run
+## Core Mechanics
+
+Your mission is simple yet engaging:
+1. **Collect All Items:** Traverse the map and gather all collectibles (`C`).
+2. **Reach the Exit:** Once you have all the items, head towards the exit (`E`).
+3. **Respect the Terrain:** Walls (`1`) block your path, so plan your route carefully.
+4. **Navigate Thoughtfully:** Use **W, A, S, D** to move up, left, down, and right.  
+5. **Quit Cleanly:** Press **ESC** or close the window to exit the game gracefully.
+
+The map characters:
+- `0` - Empty space  
+- `1` - Wall  
+- `C` - Collectible  
+- `E` - Exit  
+- `P` - Player start position
+
+**Path Validation:** If the map isn’t valid—maybe it’s not rectangular, not fully surrounded by walls, or lacks a reachable path to exit and collect all items—the game will refuse to start, ensuring a solid foundation for an enjoyable gaming experience.
+
+---
+
+## Bonus Features
+
+Why stop at the basics?
+- **Sprite Animation:** Characters and elements come alive with animations, adding visual flair.
+- **Score Display:** The current score or move count is displayed right on the screen, keeping you connected to your progress at all times.
+
+---
+
+## Getting Started
+
+**Ready to embark on this adventure?** Follow these steps:
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/korberlin/so_long.git
    cd so_long
    ```
 
-2. **Compile the Project:**
+2. **Build the Project:**
    ```bash
    make
    ```
-   This will generate the `so_long` executable.
+   After compilation, you’ll have the `so_long` executable ready to play.
 
 3. **Run the Game:**
    ```bash
    ./so_long maps/example.ber
    ```
-   Replace `example.ber` with the path to your own `.ber` map file.
+   Replace `example.ber` with the path to your own custom map file.
+
+As you step into the world of **so_long**, enjoy the interplay of logic, artistry, and coding finesse. Each step your character takes, each collectible gathered, and each score increment you see on the screen reveals the careful craftsmanship behind the scenes.
 
 ---
 
 ## Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the code, add new features, or enhance the gameplay experience.
+
+Have ideas for improvements or new features? Contributions are always welcome! Feel free to open issues, suggest enhancements, or submit pull requests. Let’s evolve **so_long** together, making it an even more captivating and polished experience.
 
 ---
 
-**Thank you for exploring my so_long project!** Enjoy the game and have fun! 🎉
+**Thank you for exploring my so_long project!** May your journey be filled with discovery, fun, and continuous learning. Enjoy the game and have a blast! 🚀
 ```
